@@ -1,0 +1,20 @@
+@font-face {
+    font-family: CodeBold;
+    src: url(./assets/fonts/CODE_Bold.WOFF) format("woff");
+}
+@font-face {
+    font-family: CodeLight;
+    src: url(./assets/fonts/CODE_Light.WOFF) format("woff");
+}
+@font-face {
+    font-family: Gothic;
+    src: url(./assets/fonts/GOTHIC.WOFF) format("woff");
+}
+@font-face {
+    font-family: GothicBold;
+    src: url(./assets/fonts/GOTHICB.WOFF) format("woff");
+}
+@font-face {
+    font-family:MyriadPro;
+    src: url(./assets/fonts/MyriadPro-Regular.WOFF) format("woff");
+}
