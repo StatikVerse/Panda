@@ -6,6 +6,15 @@ import { AppComponent } from './app.component';
 import { ShellComponent } from './shell/shell.component';
 import { LandingSliderComponent } from './landing-slider/landing-slider.component';
 import { StartButtonComponent } from './start-button/start-button.component';
+import { HomeComponent } from './home/home.component';
+import { RegisterComponent } from './register/register.component';
+import { UserComponent } from './user/user.component';
+import { ProfileComponent } from './profile/profile.component';
+import { MissionsComponent } from './missions/missions.component';
+import { GoalsComponent } from './goals/goals.component';
+import { CompanyComponent } from './company/company.component';
+import { SettingsComponent } from './settings/settings.component';
+import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 
 
 @NgModule({
@@ -13,7 +22,16 @@ import { StartButtonComponent } from './start-button/start-button.component';
     AppComponent,
     ShellComponent,
     LandingSliderComponent,
-    StartButtonComponent
+    StartButtonComponent,
+    HomeComponent,
+    RegisterComponent,
+    UserComponent,
+    ProfileComponent,
+    MissionsComponent,
+    GoalsComponent,
+    CompanyComponent,
+    SettingsComponent,
+    LeaderboardComponent
   ],
   imports: [
     BrowserModule
