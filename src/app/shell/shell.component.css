@@ -3,3 +3,6 @@
     left: 50%;
     position: absolute;
 }
+.navbar-toggle.pull-left {
+    margin-left: 15px;
+  }
