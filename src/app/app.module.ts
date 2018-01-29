@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
 
 
 import { AppComponent } from './app.component';
@@ -15,6 +16,12 @@ import { GoalsComponent } from './goals/goals.component';
 import { CompanyComponent } from './company/company.component';
 import { SettingsComponent } from './settings/settings.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
+
+const appRoutes: Routes = [
+  { path: 'home', component: HomeComponent},
+  { path: '', redirectTo: '/home', pathMatch:'full'},
+  { path: '**', redirectTo: '/home', pathMatch:'full'}
+]
 
 
 @NgModule({
@@ -34,7 +41,8 @@ import { LeaderboardComponent } from './leaderboard/leaderboard.component';
     LeaderboardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

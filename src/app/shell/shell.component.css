@@ -6,3 +6,7 @@
 .navbar-toggle.pull-left {
     margin-left: 15px;
 }
+
+.navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger5.svg?color=ffffff');
+}
