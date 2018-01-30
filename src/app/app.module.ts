@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MaterialModule } from './material.module';
+import { MaterialModule } from './modules/material.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from "@angular/flex-layout";
 
@@ -19,9 +19,12 @@ import { GoalsComponent } from './goals/goals.component';
 import { CompanyComponent } from './company/company.component';
 import { SettingsComponent } from './settings/settings.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
+import { LearnMoreComponent } from './learn-more/learn-more.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent},
+  { path: 'about', component: LearnMoreComponent},
+  { path: 'register', component: RegisterComponent},
   { path: '', redirectTo: '/home', pathMatch:'full'},
   { path: '**', redirectTo: '/home', pathMatch:'full'}
 ]
@@ -41,7 +44,8 @@ const appRoutes: Routes = [
     GoalsComponent,
     CompanyComponent,
     SettingsComponent,
-    LeaderboardComponent
+    LeaderboardComponent,
+    LearnMoreComponent
   ],
   imports: [
     BrowserModule,
